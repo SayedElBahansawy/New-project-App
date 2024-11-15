@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap");
+
+:root {
+  --mainColor: #ffc527;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section__title {
+  position: relative;
+  display: inline-block;
+}
+
+.section__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  height: 5px;
+  background-color: var(--mainColor);
+}
+
+.navbar {
+  box-shadow: 1px 2px 5px #ebebeb;
+}
+.serves{
+  padding: 50px;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  
+
+}
+.serves p::after{
+  content: "";
+  width: 70px;
+  height: 8px;
+  margin: auto;
+  background-color: #ffc527;
+ display: block;
+}
+.home {
+  height: 600px;
+  background-size: cover;
+  background-image: url("../images/img/6.jpg");
+  padding: 1px;
+}
+
+.home-item {
+  width: 50%;
+  margin-left: auto;
+  margin-top: 15%;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding: 15px 15px;
+  border-radius:8px;
+}
+.home-item p{
+  font-size: 26px;
+  color: #fff;
+}
+.home-item h2{
+ color:#ffc527 !important;
+  font-weight:700;
+}
+.home-item a{
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:700;
+}
+@media (max-width: 768px) {
+  .home {
+    height: 400px;
+  }
+  .home-item {
+    width: 100%;
+  }
+
+
+.home-item h2 {
+  font-size: 25px;
+}
+
+.home-item p {
+  color: #fff;
+  font-size: 16px;
+}
+.home-item a {
+  margin: auto;
+  display: block;
+}
+}
+.about{
+  background-color: #eee;
+}
+.section__title1{
+  font-size: 35px;
+  font-weight:700;
+  color: #ffc527;
+}
+.about__item button {
+  margin-bottom: 15px;
+}
+.about__item img{
+  width: 300px;
+  height: 200px;
+}
+.list-item li{
+ font-size: 21px;
+ font-weight: 600;
+ list-style: circle;
+ line-height: 1.6;
+}
+.news .news-left,
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.news .news-left img,
+.footer-left img {
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.subscribe {
+  height: 450px;
+  background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  padding: 1px;
+  position: relative;
+}
+
+.subscribe__item {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.subscribe__item h2 {
+  font-size: 40px;
+}
+
+.subscribe__item .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__item .form input {
+  width: 80%;
+}
+
+.subscribe__item button {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .subscribe__item {
+    width: 80%;
+  }
+  .subscribe__item .form {
+    flex-direction: column;
+  }
+  .subscribe__item .form input,
+  .subscribe__item button {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #071c33;
+  color: #fff;
+}
+
+footer h3 {
+  background: #fff;
+  color: #222;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.footer-left {
+  font-size: 12px;
+}
+
+.footer-left img {
+  width: 50px;
+}
+
+/* *********** Blog ***/
+.breadcrumb {
+  margin: 0;
+  justify-content: flex-end;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+}
+
+.blog .jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.blog .jumbotron .blog-desc {
+  width: 55%;
+}
+
+.blog .jumbotron .blog-desc h4 {
+  font-size: 18px;
+}
+
+.blog .jumbotron .blog-img {
+  width: 40%;
+}
+.card-title{
+  font-size: 25px;
+  font-weight:600;
+}
+.my-4{
+  font-size: 22px;
+}
+.btn-tel{
+  padding: 10px 25px;
+  font-size: 30px;
+}
+@media (max-width: 768px){
+  .serves{
+    font-size: 20px;
+    padding: 20px;
+  }
+  .serves p::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+   
+  }
+  .card-center{
+    margin: 20px 0;
+  }
+  .section__title1{
+    font-size: 22px;
+  }
+  .list-item li{
+    font-size: 16px;
+    list-style: none;
+    margin: 10px 0;
+  }
+  .subscribe__item{
+
+    left: 50%;
+   
+  }
+  .my-4{
+    font-size:14px;
+  }
+  .btn-tel{
+    padding: 4px 12px;
+    font-size: 18px;
+    display: block;
+  }
+}
